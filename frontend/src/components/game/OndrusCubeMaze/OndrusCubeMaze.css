@@ -1,0 +1,215 @@
+.mines-toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.score-status {
+    text-align: center;
+}
+
+
+div.minesControl {
+    border: 1px solid darkgrey;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    min-width: 13em;
+}
+
+div.minesControl span.gameInfo {
+    width:13em;
+    display: inline-block;
+}
+
+
+table.minefield td {
+    text-align: center;
+    background-color: lightgray;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2.1em;
+    border-radius: 0.2em;
+}
+
+table.minefield a:link,
+table.minefield a:visited,
+table.minefield a:link:hover,
+table.minefield a:visited:hover {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+table.minefield a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+table.minefield td {
+    line-height: 2rem;
+}
+
+
+table.minefield td.closed:hover {
+    background-color: springgreen;
+}
+
+table.minefield td.road:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+table.minefield td.finish:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+table.minefield td.marked_red:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+table.minefield td.marker_red:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.square {
+    background-color: #3d3d3d;
+    background-image: url("images/diceIngram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border-width: 5px;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-top-color: #3d3d3d;
+    border-right-color: #3d3d3d;
+    border-bottom-color: #3d3d3d;
+    border-left-color: #3d3d3d;
+    border-radius: 15%;
+}
+
+
+button.my-button{
+    background: linear-gradient(to right,#196BCA ,#6433E0);
+    background-color: #196BCA;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 2px 15px;
+    border: 0px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+}
+button.my-button:hover{
+    background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+    background-color: #5482d0;
+}
+button.my-button:active{
+    transform: scale(0.95);
+}
+
+table.minefield td.road {
+    width: 50px;
+    height: 50px;
+    color: #3d3d3d;
+    background-color: #3d3d3d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+table.minefield td.empty {
+    width: 50px;
+    height: 50px;
+    color: #b2ecff;
+    background-color: #b2ecff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+table.minefield td.finish {
+    width: 50px;
+    height: 50px;
+    color: #fff000;
+    background-image: url("images/ingramFinish.png");
+    background-color: #fff000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+table.minefield td.marked_red {
+    width: 50px;
+    height: 50px;
+    color: #e10707;
+    background-color: #ee0c0c;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+table.minefield td.marked_blue {
+    width: 50px;
+    height: 50px;
+    color: #0000ff;
+    background-color: #0000ff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+
+table.minefield td.marker_red {
+    width: 50px;
+    height: 50px;
+    color: #e10707;
+    background-color: #ee0c0c;
+    background-image: url("images/swapRed.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+table.minefield td.marker_blue {
+    width: 50px;
+    height: 50px;
+    color: #0000ff;
+    background-color: #0000ff;
+    background-image: url("images/swapBlue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+table.minefield td.marker_none {
+    width: 50px;
+    height: 50px;
+    color: #3d3d3d;
+    background-color: #3d3d3d;
+    background-image: url("images/swapNone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+
+

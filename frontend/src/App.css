@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+body {
+    background-color: #b2ecff;
+    font-size: 1rem;
+    font-family: Lobster;
+    font-family: Arial, "Arial CE", "Helvetica CE", sans-serif;
+    color: #000000;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.index-container, .score-container, .comments-container {
+    padding-top: 2rem;
+    height: 800px;
+}
+
+div.centered {
+    text-align: center;
+    align-items: center;
+}
+
+.game-container {
+    display: flex;
+
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+h1 { font-size: 1.6rem; line-height: 1.8rem; }
+h2 { font-size: 1.4rem; line-height: 1.6rem; }
+h3 { font-size: 1.2rem; line-height: 1.4rem; }
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+}
+
+h1.score-comments {
+    text-align: center;
+    text-decoration: #7d5ee3;
+}
+
+.navbar-brandCustom {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4d4a4a;
+}
+
+.navbar-brandCustom:hover {
+    transition: opacity 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-item a {
+    font-family: 'Lobster', cursive;
+    color: #4d4a4a !important;
+}
+
+.navbar-nav .nav-item a :hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login-link {
+    font-family: 'Lobster', cursive;
+    color: #28282f !important;
+    font-weight: normal;
+    border-color: #3d3d3d;
+
+}
+.signup-link {
+    color: #0909ee !important;
+    font-weight: normal;
+    background-color: #b2ecff;
+    border-radius: 0.25rem;
+}
+
+.logout-link {
+    color: #28282f !important;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    background-color: #afafaf;
+    border-radius: 0.25rem;
+}
+
+label.logged_user_display {
+    font-family: 'Lobster', cursive;
+    color: #28282f !important;
+    font-weight: 200;
+    font-size: 0.8rem;
+    border-color: #3d3d3d;
+    margin-top: 0.8rem;
+    padding-right: 15px;
+}
+
+
+h1.game-name1 {
+    font-family: 'Lobster', cursive;
+    line-height: 4rem;
+    padding-top:2.5em;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 800;
+    color: #333030;
+    /*background: linear-gradient(180deg, #F9D335 60%, #333030 30%);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+}
+h1.game-name2 {
+    font-family: 'Lobster', cursive;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 800;
+    color: #F9D335;
+}
+
+
+
+/*Properties of the form elements*/
+
+label {
+    vertical-align: top;
+    display: inline-block; /*instead of inline (default)*/
+    min-width: 5em;
+}
+
+/*Properties of the tables with scores*/
+table.scores, table.comments {
+    width: 100%;
+    border: 2px solid black;
+}
+
+table.scores th, table.comments th {
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: dimgray;
+}
+
+table.scores tr:nth-child(even), table.comments tr:nth-child(even) {
+    background-color: lightgray
+}
+
+table.scores tr:nth-child(odd), table.comments tr:nth-child(odd) {
+    background-color: white;
+}
+
+table.scores tr, table.comments tr {
+    border-width: 0;
+}
+
+/*Properties of the links we want to look like buttons*/
+
+a.abutton, .abutton {
+    white-space: nowrap;
+    border: 1px solid darkslategrey;
+    display: inline-block;
+    /*width: 8em;*/
+    margin: 0.1em;
+    padding: 0.4em 0.8em;
+    border-radius: 0.2em;
+    max-height: calc(1em + 2*(0.8em));
+    background-color: white;
+    font-weight: normal;
+}
+
+a.abutton:hover, .abutton:hover {
+    background-color: springgreen;
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+
+/*adjustment for smaller screens/viewports*/
+@media (max-width: 600px) {
+    iframe.body {
+        max-width: 95vw;
+    }
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    text-decoration: none !important;
+}
+
+.dropdown-item.active:hover, .dropdown-item.active:active {
+    color: white;
+}
+
+.color-nav {
+    background-color: #CFCFC4;
+}
+
+p.no_logged_user {
+    font-family: 'Lobster', cursive;
+    color: #f60c22 !important;
+
+}
+
+h4.rating-heads {
+    font-family: 'Lobster', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4d4a4a;
+    padding-bottom: 20px;
+}
+h4.add-comment {
+    font-family: 'Lobster', cursive;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #4d4a4a;
+
+}
+
+h4.game-win {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #efe100;
+}
+
+h4.game-score {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #4d4a4a;
+}

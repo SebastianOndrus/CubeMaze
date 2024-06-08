@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>CubeMaze</title>
+  <link rel="stylesheet" href="/css/stylesheet.css"/>
+</head>
+<body>
+
+<h1>Cube Maze!</h1>
+
+<div class="gameBoard">
+<span th:utext="${@cubeMazeController.getHtmlField()}"></span>
+</div>
+
+</body >
+</html>

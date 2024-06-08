@@ -1,0 +1,53 @@
+body {
+    background-color: #8D9EFF;
+    font-size: 12px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Helvetica CE", sans-serif;
+    color: #051362;
+    margin: 10px;
+}
+
+h1 {
+    font-family: Arial, "Arial CE", "Helvetica CE", sans-serif;
+    font-size:  28px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #045491;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Arial, "Arial CE", "Helvetica CE", sans-serif;
+    font-size:  16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #045491;
+}
+
+a:link, a:visited {
+  color: #045491;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+  color: #045491;
+  font-weight : bold;
+  text-decoration : underline;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+td {
+    padding: 0;
+}
+
+.gameBoard {
+    display: flex;
+    justify-content: center;
+}
